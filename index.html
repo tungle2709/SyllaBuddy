@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syllabus Planner AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">
+      <img src="/static/logo.png" alt="Logo" class="logo">
+      <span>Syllabuddy</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/upcoming.html">Upcoming Tasks</a>
+      <a href="/how-it-works.html">How It Works</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">Convert Your Syllabus into a Smart Schedule</h1>
+      <p class="fade-in-delay">Upload a PDF syllabus and get a clean, organized list of assignments and deadlines.</p>
+      <form id="upload-form" class="upload-form">
+        <input type="file" id="syllabus-upload" name="pdf" accept="application/pdf" required />
+        <button type="submit">Upload Syllabus</button>
+      </form>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8fDA%3D" alt="Study illustration" />
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Why Use Syllabus Planner?</h2>
+    <div class="feature-grid">
+      <div class="feature-card slide-up">
+        <img src="https://www.timetap.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fgyc8zs33%2Fproduction%2F2ce8e8067b44580e2b41a81b3dd1a3cd6c4a8e6a-800x520.png%3Frect%3D0%2C35%2C800%2C450%26w%3D1200%26h%3D675%26auto%3Dformat&w=3840&q=75" alt="Calendar Icon" />
+        <h3>Auto Scheduling</h3>
+        <p>Extracts deadlines directly from your syllabus and organizes them.</p>
+      </div>
+      <div class="feature-card slide-up">
+        <img src="https://cdn-icons-png.flaticon.com/512/9709/9709605.png" alt="Organized Icon" />
+        <h3>Clean Output</h3>
+        <p>No mess. Just a structured, readable timeline of assignments.</p>
+      </div>
+      <div class="feature-card slide-up">
+        <img src="https://theseanamethod.com/wp-content/uploads/2024/03/reminder-1922255_640-300x279.png" alt="Reminder Icon" />
+        <h3>Stay on Track</h3>
+        <p>Download or connect with your calendar app to never miss a deadline.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Contact Us Section -->
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/your-profile" target="_blank">
+            <img src="https://i.pinimg.com/736x/6b/ab/30/6bab3017350ca04c6fa05569672bd31e.jpg" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/your-repo" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6DXuvit57V1DmjnlLcwst4O-sTL5D37gIQ&s" alt="GitHub">
+          </a>
+          <a href="mailto:your-email@gmail.com">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACUCAMAAABGFyDbAAAAY1BMVEUAAAD////MzMyvr6/8/Pzt7e1OTk7Q0ND5+fn09PQEBARnZ2eOjo7IyMjp6end3d0rKyucnJwdHR3W1tYxMTG+vr64uLh2dnaFhYUYGBg3NzdXV1dwcHAkJCRfX19GRkakpKTJ66wwAAAFIklEQVR4nO2biZKjIBCGBU1AIxijOSaZHO//lEuDMVFB0KipneKvmtnaCd1+djeHYILAy8vLy8vLy8vLy8vLy8vr7yuBn0T+I34lyQxXUN7He56B6d35cPfny2V9VcbTayucnwdbJWUa7jHG+8NvOT1T+Xs4gPMwLV1vWcb1muOCEGFJSIGPu2Ci+koS8PNzYgWunJN85+YbGt0OBX6JHLZTJRKcX/cCiVSucXG4uFkGwaUg+B2LsOMkUFJHRjBh5OW8WLth3fcNKlBx2k0DtTup4sBvl2B3J6wulbgnlcgxHfrpF+qq3Bdd12TvUiObjqU03m8q6tFYwrXmjoXvYmM334U6U8GVyUSOxwquaZXAlmdGwqvV753pTBXYRwW24wU23DFbW7GOWlNpTuNU3vfgiIFBGkdmz0cr1klXWso4Rii/jhtadzlC1Oi5OFkdpLr8V1gRRdl5TH2dORLG5mildqzeaEWIjxhajxxFETJjFan1VlOiL0yFBcqd50g1B0ICQZ9Fy4IlbjtznF4rNo4WwIJExvYSVUTgr7JaAEsk8scN7CeX8V0CS4JltqWlLKsyQy/NjyW4+K+6uhlL9cBlscQQJhPZU/rvCZwCy2T8lkQAQ1m/p0y0mg6rdzhtSvXI7mABfzjFiDZb9w6n9miZJ582FkJpoh9ak7Tb1oBFZLRs42DImTMWzJGlrr5ED6SNBPZGi/HQGq0Qmbg0WFBgmqXlJpPF54jFOHLBMq1AdEmUifx5JrJ6DtQk0IzFiChBFyyKaMYw7owTeiwRk6JZX5mumQmLZdAxnKIFyxfcHb5M0UJoVc2RVQ8cgsXljbliIYo7FWbCghKq5+4T6tRUH1asxkA3LKmszWWOluAo5A7K1pRADRYRCXx+NABLJLL5ENSDBXP3TfVAdyzG64/cscSl4oI5YwmcNDUnsIsleuCr7SCsqke6JFGMnRS15sBeLFbQaAyWEsevgcKM5aYai6ge+KaBWBFavXrkRFjiN8NxM6rDsMA2qhM5WbRw1q7BEVj1SDEVFutQDa6thr9JsOQc2NZwrKiaI9k00RI9UPPRqGjJOXKiJHLt2DYmWghWvzFjE2AxcDEJVo2Xkbi7tHNXFMXEOGOOx6IRp/2Tiw0LceOH47HEqupSIKorWDdl65mw1tvHaCgUXu+rmbDaj+8uUs8asDWwng0rCe7mTJix0Ao2UubECoJ8WLwisYDJ5TJ/Rix4wkmHYSHYNk9mjVYgL5DItbEDHBWhQvUhw6xY8EhYhpLLCgYtwvK5GTBvtJLnhppLLuUT5BJY1RM09Eg7F5gkyTJYFdxDt/3xJvHJo7HxuwiWGCl660us0/Lm3sQy0VK7WOY5km/fErhgtILgbG6MwnP9PszSWEFwWrULv5oDNecci2HBjNKeI9UcqDusXw4Lzr8ezXjBwB5qT48XxAKwvBkt1QO/iSXRgmDLqzlSbo1w02nQoljAdT7UUOhgPKNaNloykdAjocTk2b9h63/ZaKmRHK4peuClNYR+EUtpKwzDbV+Lr2CJHpnrz3++ilUdY/S0+BJWYnkZ9EtJtMljeSyP5bE8lsf6v7Aexgf4GbEeVuMjNe3EzIdF7W9nno3H4PNhZWf7u6wbk/F8WBuXNzND9U7PAliReoazF7xc/Ka1yUvi/59hJYDV8qnKOHf9ishmz2kLK6IR/zRavOuTrvY3t7uSaS5vm45uH34fY6fzuZ3qyzpeXl5eXl5eXl5eXl5eXl5ef0b/AHrsTyByyJTNAAAAAElFTkSuQmCC" alt="Gmail">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="copyright">
+        <p>&copy; 2025 Syllabus Planner AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/uploadHandler.js"></script>
+</body>
+</html>
