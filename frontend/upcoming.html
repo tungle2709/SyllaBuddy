@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upcoming Tasks</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">
+      <a href="/index.html">
+        <img src="/static/logo.png" alt="Logo" class="logo">
+      </a>
+      <span>Syllabuddy</span>
+    </div>
+    <nav class="nav-links">
+      <a href="/result.html">Schedule</a>
+      <a href="/upcoming.html">Upcoming Tasks</a>
+      <a href="/how-it-works.html">How It Works</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="title">📅 Upcoming Tasks</h1>
+    <div id="current-time" class="current-time stylish-box">
+      <!-- Current time and date will be dynamically rendered here -->
+    </div>
+    <div id="weekly-tasks" class="weekly-task-list"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Contact Us Section -->
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/tung-le-dev/" target="_blank">
+            <img src="https://i.pinimg.com/736x/6b/ab/30/6bab3017350ca04c6fa05569672bd31e.jpg" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/tungle2709/SyllaBuddy" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6DXuvit57V1DmjnlLcwst4O-sTL5D37gIQ&s" alt="GitHub">
+          </a>
+          <a href="mailto:your-email@gmail.com">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACUCAMAAABGFyDbAAAAY1BMVEUAAAD////MzMyvr6/8/Pzt7e1OTk7Q0ND5+fn09PQEBARnZ2eOjo7IyMjp6end3d0rKyucnJwdHR3W1tYxMTG+vr64uLh2dnaFhYUYGBg3NzdXV1dwcHAkJCRfX19GRkakpKTJ66wwAAAFIklEQVR4nO2biZKjIBCGBU1AIxijOSaZHO//lEuDMVFB0KipneKvmtnaCd1+djeHYILAy8vLy8vLy8vLy8vLy8vr7yuBn0T+I34lyQxXUN7He56B6d35cPfny2V9VcbTayucnwdbJWUa7jHG+8NvOT1T+Xs4gPMwLV1vWcb1muOCEGFJSIGPu2Ci+koS8PNzYgWunJN85+YbGt0OBX6JHLZTJRKcX/cCiVSucXG4uFkGwaUg+B2LsOMkUFJHRjBh5OW8WLth3fcNKlBx2k0DtTup4sBvl2B3J6wulbgnlcgxHfrpF+qq3Bdd12TvUiObjqU03m8q6tFYwrXmjoXvYmM334U6U8GVyUSOxwquaZXAlmdGwqvV753pTBXYRwW24wU23DFbW7GOWlNpTuNU3vfgiIFBGkdmz0cr1klXWso4Rii/jhtadzlC1Oi5OFkdpLr8V1gRRdl5TH2dORLG5mildqzeaEWIjxhajxxFETJjFan1VlOiL0yFBcqd50g1B0ICQZ9Fy4IlbjtznF4rNo4WwIJExvYSVUTgr7JaAEsk8scN7CeX8V0CS4JltqWlLKsyQy/NjyW4+K+6uhlL9cBlscQQJhPZU/rvCZwCy2T8lkQAQ1m/p0y0mg6rdzhtSvXI7mABfzjFiDZb9w6n9miZJ582FkJpoh9ak7Tb1oBFZLRs42DImTMWzJGlrr5ED6SNBPZGi/HQGq0Qmbg0WFBgmqXlJpPF54jFOHLBMq1AdEmUifx5JrJ6DtQk0IzFiChBFyyKaMYw7owTeiwRk6JZX5mumQmLZdAxnKIFyxfcHb5M0UJoVc2RVQ8cgsXljbliIYo7FWbCghKq5+4T6tRUH1asxkA3LKmszWWOluAo5A7K1pRADRYRCXx+NABLJLL5ENSDBXP3TfVAdyzG64/cscSl4oI5YwmcNDUnsIsleuCr7SCsqke6JFGMnRS15sBeLFbQaAyWEsevgcKM5aYai6ge+KaBWBFavXrkRFjiN8NxM6rDsMA2qhM5WbRw1q7BEVj1SDEVFutQDa6thr9JsOQc2NZwrKiaI9k00RI9UPPRqGjJOXKiJHLt2DYmWghWvzFjE2AxcDEJVo2Xkbi7tHNXFMXEOGOOx6IRp/2Tiw0LceOH47HEqupSIKorWDdl65mw1tvHaCgUXu+rmbDaj+8uUs8asDWwng0rCe7mTJix0Ao2UubECoJ8WLwisYDJ5TJ/Rix4wkmHYSHYNk9mjVYgL5DItbEDHBWhQvUhw6xY8EhYhpLLCgYtwvK5GTBvtJLnhppLLuUT5BJY1RM09Eg7F5gkyTJYFdxDt/3xJvHJo7HxuwiWGCl660us0/Lm3sQy0VK7WOY5km/fErhgtILgbG6MwnP9PszSWEFwWrULv5oDNecci2HBjNKeI9UcqDusXw4Lzr8ezXjBwB5qT48XxAKwvBkt1QO/iSXRgmDLqzlSbo1w02nQoljAdT7UUOhgPKNaNloykdAjocTk2b9h63/ZaKmRHK4peuClNYR+EUtpKwzDbV+Lr2CJHpnrz3++ilUdY/S0+BJWYnkZ9EtJtMljeSyP5bE8lsf6v7Aexgf4GbEeVuMjNe3EzIdF7W9nno3H4PNhZWf7u6wbk/F8WBuXNzND9U7PAliReoazF7xc/Ka1yUvi/59hJYDV8qnKOHf9ishmz2kLK6IR/zRavOuTrvY3t7uSaS5vm45uH34fY6fzuZ3qyzpeXl5eXl5eXl5eXl5eXl5ef0b/AHrsTyByyJTNAAAAAElFTkSuQmCC" alt="Gmail">
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="copyright">
+        <p>&copy; 2025 Syllabuddy AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/upcomingTasks.js"></script>
+</body>
+</html>
