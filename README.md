@@ -14,6 +14,7 @@ Syllabuddy AI is a web application that helps students organize their academic s
 ---
 
 ## Project Structure
+
 Hackathon/ 
 ├── backend/ 
 │ ├── sever.js # Backend server for processing uploads and extracting data 
@@ -53,10 +54,14 @@ Hackathon/
    cd SyllaBuddy
 
 2.Install dependencies:
+ ```bash
   npm install
+```
 
 3.Start the server:
+ ```bash
   node backend/sever.js
+```
 
 4.Open the application in your browser:
   http://localhost:4000
