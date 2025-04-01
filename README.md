@@ -49,8 +49,8 @@ Hackathon/
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/syllabuddy.git
-   cd syllabuddy
+   git clone https://github.com/tungle2709/SyllaBuddy
+   cd SyllaBuddy
 
 2.Install dependencies:
   npm install
@@ -62,19 +62,27 @@ Hackathon/
   http://localhost:4000
 
 
-Usage
-Upload a Syllabus
-Navigate to the homepage (index.html).
-Upload a PDF syllabus file using the upload form.
-Wait for the system to process the file. Once completed, you will be redirected to the Assignment Schedule page.
-View Assignment Schedule
-The Assignment Schedule page (result.html) displays a table of assignments, quizzes, exams, and other tasks for each course.
-View Upcoming Tasks
-The Upcoming Tasks page (upcoming.html) groups tasks by week and displays them in chronological order.
-Edit and Save
-On the Assignment Schedule page, you can edit assignment details directly in the table and save changes.
-File Upload Requirements
+### Usage:
+
+-   Upload a PDF syllabus file using the upload form.
+
+-   Wait for the system to process the file. Once completed, you will be redirected to the Assignment Schedule page.
+
+-   View Assignment Schedule
+
+-   The Assignment Schedule page (result.html) displays a table of assignments, quizzes, exams, and other tasks for each course.
+
+-   View Upcoming Tasks
+
+-   The Upcoming Tasks page groups tasks by week and displays them in chronological order.
+
+-   Edit and Save
+
+-   On the Assignment Schedule page, you can edit assignment details directly in the table and save changes
+
+***File Upload Requirements:
 Supported File Types: PDF
 File Size Limit: 10 MB
+
 Content Requirements: The syllabus should include clear course names, assignment descriptions, due dates, and weights.
 
