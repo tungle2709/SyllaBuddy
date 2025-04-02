@@ -11,13 +11,6 @@ Syllabuddy AI is a web application that helps students organize their academic s
 - **Edit and Save**: Edit assignment details directly in the schedule and save changes.
 - **Export Schedule**: Export the schedule for offline use or integration with calendar apps.
 
----
-
-## Project Structure
-
-<pre><code>📁 Hackathon/ ├── 📁 backend/ │ └── sever.js # Backend server for processing uploads and extracting data ├── 📁 data/ │ ├── 📁 output/ │ │ └── schedule.json # Stores the extracted schedule data │ └── 📁 uploaded_files/ # Stores uploaded PDF files ├── 📁 frontend/ │ ├── index.html # Homepage with upload form │ ├── result.html # Displays the assignment schedule │ ├── upcoming.html # Displays upcoming tasks grouped by week │ ├── how-it-works.html # Explains how the system works │ └── 📁 static/ │ ├── style.css # Styling for the frontend │ ├── renderSchedule.js # Script for rendering the schedule │ ├── upcomingTasks.js # Script for rendering upcoming tasks │ └── uploadHandler.js # Handles file uploads ├── 📁 resource/ # Sample syllabus files for testing ├── summary.txt # Debugging output for extracted data ├── package.json # Node.js dependencies └── README.md # Project documentation </code></pre>
-
-
 
 ---
 
