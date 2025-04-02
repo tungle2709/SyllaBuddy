@@ -13,6 +13,10 @@ async function fetchScheduleData(url) {
   }
 }
 
+
+
+
+
 function renderCurrentTime(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
