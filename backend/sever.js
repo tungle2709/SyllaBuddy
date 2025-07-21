@@ -12,6 +12,7 @@ const apiKey = 'sk-proj-fLRpt6vlsu4D3V-oLvr0_A36EeNcR_q-SzObtGeHhLeA03B1H4H6bcac
 const instruction = `
 You are an assistant that extracts structured course schedule data from university or college course plans.
 
+
 Return a single valid JSON object in this format:
 
 {
