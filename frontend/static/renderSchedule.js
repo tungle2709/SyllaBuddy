@@ -13,6 +13,7 @@ async function fetchScheduleData(url) {
   }
 }
 
+
 function renderSchedule(data, containerId) {
   const container = document.getElementById(containerId);
   if (!container) {
