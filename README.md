@@ -2,6 +2,7 @@
 
 Syllabuddy AI is a web application that helps students organize their academic schedules by extracting structured data from syllabus documents. The system uses AI to parse PDF syllabi and generate a clean, organized schedule of assignments, quizzes, exams, and other tasks.
 
+
 ## Features
 
 - **Upload Syllabus**: Upload PDF syllabus files to extract course schedules.
