@@ -6,12 +6,14 @@ const pdfParse = require('pdf-parse');
 const axios = require('axios');
 
 
+
 const app = express();
 const upload = multer({ dest: 'data/uploaded_files/' });
 
 const apiKey = '';
 const instruction = `
 You are an assistant that extracts structured course schedule data from university or college course plans.
+
 
 Return a single valid JSON object in this format:
 
