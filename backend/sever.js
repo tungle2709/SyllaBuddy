@@ -8,6 +8,7 @@ asdadsasdasdadsasdasdasd
 const app = express();
 const upload = multer({ dest: 'data/uploaded_files/' });
 
+
 const apiKey = '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';
 const instruction = `
 You are an assistant that extracts structured course schedule data from university or college course plans.
@@ -195,3 +196,4 @@ app.post('/upload', upload.single('file'), async (req, res) => {
 app.listen(4000, () => {
   console.log('Server is running on http://localhost:4000');
 });
+
